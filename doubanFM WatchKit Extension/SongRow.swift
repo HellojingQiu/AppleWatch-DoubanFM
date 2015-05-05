@@ -6,8 +6,11 @@
 //  Copyright (c) 2015年 OliHire-HellowJingQiu. All rights reserved.
 //
 
-import Cocoa
+import WatchKit
 
 class SongRow: NSObject {
-
+    @IBOutlet weak var image: WKInterfaceImage!
+    @IBOutlet weak var labelTitle: WKInterfaceLabel!
+    @IBOutlet weak var labelArtist: WKInterfaceLabel!
+    
 }

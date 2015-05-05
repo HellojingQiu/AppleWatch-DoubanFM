@@ -7,12 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		282C85091AF717D4007F108D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282C85081AF717D4007F108D /* Data.swift */; };
+		282C850B1AF71CAF007F108D /* ChannelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282C850A1AF71CAF007F108D /* ChannelRow.swift */; };
+		282C850D1AF71F29007F108D /* ChannelConrtoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282C850C1AF71F29007F108D /* ChannelConrtoller.swift */; };
+		282C85111AF73311007F108D /* SongRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282C85101AF73311007F108D /* SongRow.swift */; };
+		282C85151AF734DF007F108D /* SongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282C85141AF734DF007F108D /* SongController.swift */; };
+		2848DEFA1AF1F31C004842D6 /* HttpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2848DEF91AF1F31C004842D6 /* HttpController.swift */; };
 		285D89E11AF1C97100FDE003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285D89E01AF1C97100FDE003 /* AppDelegate.swift */; };
 		285D89E31AF1C97100FDE003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285D89E21AF1C97100FDE003 /* ViewController.swift */; };
 		285D89E61AF1C97100FDE003 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285D89E41AF1C97100FDE003 /* Main.storyboard */; };
 		285D89E81AF1C97100FDE003 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285D89E71AF1C97100FDE003 /* Images.xcassets */; };
 		285D89EB1AF1C97100FDE003 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 285D89E91AF1C97100FDE003 /* LaunchScreen.xib */; };
 		285D89F71AF1C97100FDE003 /* doubanFMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285D89F61AF1C97100FDE003 /* doubanFMTests.swift */; };
+		285D8A091AF1CA1E00FDE003 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285D8A081AF1CA1E00FDE003 /* InterfaceController.swift */; };
+		285D8A0B1AF1CA1F00FDE003 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285D8A0A1AF1CA1F00FDE003 /* Images.xcassets */; };
+		285D8A0F1AF1CA1F00FDE003 /* doubanFM WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 285D8A0E1AF1CA1F00FDE003 /* doubanFM WatchKit App.app */; };
+		285D8A171AF1CA1F00FDE003 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285D8A151AF1CA1F00FDE003 /* Interface.storyboard */; };
+		285D8A191AF1CA1F00FDE003 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285D8A181AF1CA1F00FDE003 /* Images.xcassets */; };
+		285D8A1C1AF1CA1F00FDE003 /* doubanFM WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 285D8A041AF1CA1B00FDE003 /* doubanFM WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		285D8A251AF1E9B200FDE003 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285D8A241AF1E9B200FDE003 /* Alamofire.swift */; };
+		285D8A271AF1E9DB00FDE003 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285D8A261AF1E9DB00FDE003 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,9 +37,43 @@
 			remoteGlobalIDString = 285D89DA1AF1C97100FDE003;
 			remoteInfo = doubanFM;
 		};
+		285D8A101AF1CA1F00FDE003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 285D89D31AF1C97100FDE003 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 285D8A0D1AF1CA1F00FDE003;
+			remoteInfo = "doubanFM WatchKit App";
+		};
+		285D8A1A1AF1CA1F00FDE003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 285D89D31AF1C97100FDE003 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 285D8A031AF1CA1B00FDE003;
+			remoteInfo = "doubanFM WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		285D8A231AF1CA2000FDE003 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				285D8A1C1AF1CA1F00FDE003 /* doubanFM WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		282C85081AF717D4007F108D /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		282C850A1AF71CAF007F108D /* ChannelRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelRow.swift; sourceTree = "<group>"; };
+		282C850C1AF71F29007F108D /* ChannelConrtoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelConrtoller.swift; sourceTree = "<group>"; };
+		282C85101AF73311007F108D /* SongRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongRow.swift; sourceTree = "<group>"; };
+		282C85141AF734DF007F108D /* SongController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongController.swift; sourceTree = "<group>"; };
+		2848DEF91AF1F31C004842D6 /* HttpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpController.swift; sourceTree = "<group>"; };
 		285D89DB1AF1C97100FDE003 /* doubanFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doubanFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		285D89DF1AF1C97100FDE003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		285D89E01AF1C97100FDE003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +84,16 @@
 		285D89F01AF1C97100FDE003 /* doubanFMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = doubanFMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		285D89F51AF1C97100FDE003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		285D89F61AF1C97100FDE003 /* doubanFMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doubanFMTests.swift; sourceTree = "<group>"; };
+		285D8A041AF1CA1B00FDE003 /* doubanFM WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "doubanFM WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		285D8A071AF1CA1D00FDE003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		285D8A081AF1CA1E00FDE003 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		285D8A0A1AF1CA1F00FDE003 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		285D8A0E1AF1CA1F00FDE003 /* doubanFM WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "doubanFM WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		285D8A141AF1CA1F00FDE003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		285D8A161AF1CA1F00FDE003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		285D8A181AF1CA1F00FDE003 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		285D8A241AF1E9B200FDE003 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		285D8A261AF1E9DB00FDE003 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +111,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		285D8A011AF1CA1B00FDE003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +126,8 @@
 			children = (
 				285D89DD1AF1C97100FDE003 /* doubanFM */,
 				285D89F31AF1C97100FDE003 /* doubanFMTests */,
+				285D8A051AF1CA1C00FDE003 /* doubanFM WatchKit Extension */,
+				285D8A121AF1CA1F00FDE003 /* doubanFM WatchKit App */,
 				285D89DC1AF1C97100FDE003 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +137,8 @@
 			children = (
 				285D89DB1AF1C97100FDE003 /* doubanFM.app */,
 				285D89F01AF1C97100FDE003 /* doubanFMTests.xctest */,
+				285D8A041AF1CA1B00FDE003 /* doubanFM WatchKit Extension.appex */,
+				285D8A0E1AF1CA1F00FDE003 /* doubanFM WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +181,50 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		285D8A051AF1CA1C00FDE003 /* doubanFM WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				285D8A081AF1CA1E00FDE003 /* InterfaceController.swift */,
+				2848DEF91AF1F31C004842D6 /* HttpController.swift */,
+				285D8A241AF1E9B200FDE003 /* Alamofire.swift */,
+				285D8A261AF1E9DB00FDE003 /* SwiftyJSON.swift */,
+				282C85081AF717D4007F108D /* Data.swift */,
+				282C850A1AF71CAF007F108D /* ChannelRow.swift */,
+				282C850C1AF71F29007F108D /* ChannelConrtoller.swift */,
+				282C85101AF73311007F108D /* SongRow.swift */,
+				282C85141AF734DF007F108D /* SongController.swift */,
+				285D8A0A1AF1CA1F00FDE003 /* Images.xcassets */,
+				285D8A061AF1CA1D00FDE003 /* Supporting Files */,
+			);
+			path = "doubanFM WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		285D8A061AF1CA1D00FDE003 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				285D8A071AF1CA1D00FDE003 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		285D8A121AF1CA1F00FDE003 /* doubanFM WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				285D8A151AF1CA1F00FDE003 /* Interface.storyboard */,
+				285D8A181AF1CA1F00FDE003 /* Images.xcassets */,
+				285D8A131AF1CA1F00FDE003 /* Supporting Files */,
+			);
+			path = "doubanFM WatchKit App";
+			sourceTree = "<group>";
+		};
+		285D8A131AF1CA1F00FDE003 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				285D8A141AF1CA1F00FDE003 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +235,12 @@
 				285D89D71AF1C97100FDE003 /* Sources */,
 				285D89D81AF1C97100FDE003 /* Frameworks */,
 				285D89D91AF1C97100FDE003 /* Resources */,
+				285D8A231AF1CA2000FDE003 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				285D8A1B1AF1CA1F00FDE003 /* PBXTargetDependency */,
 			);
 			name = doubanFM;
 			productName = doubanFM;
@@ -150,6 +265,39 @@
 			productReference = 285D89F01AF1C97100FDE003 /* doubanFMTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		285D8A031AF1CA1B00FDE003 /* doubanFM WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 285D8A201AF1CA2000FDE003 /* Build configuration list for PBXNativeTarget "doubanFM WatchKit Extension" */;
+			buildPhases = (
+				285D8A001AF1CA1B00FDE003 /* Sources */,
+				285D8A011AF1CA1B00FDE003 /* Frameworks */,
+				285D8A021AF1CA1B00FDE003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				285D8A111AF1CA1F00FDE003 /* PBXTargetDependency */,
+			);
+			name = "doubanFM WatchKit Extension";
+			productName = "doubanFM WatchKit Extension";
+			productReference = 285D8A041AF1CA1B00FDE003 /* doubanFM WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		285D8A0D1AF1CA1F00FDE003 /* doubanFM WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 285D8A1D1AF1CA2000FDE003 /* Build configuration list for PBXNativeTarget "doubanFM WatchKit App" */;
+			buildPhases = (
+				285D8A0C1AF1CA1F00FDE003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "doubanFM WatchKit App";
+			productName = "doubanFM WatchKit App";
+			productReference = 285D8A0E1AF1CA1F00FDE003 /* doubanFM WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +313,12 @@
 					285D89EF1AF1C97100FDE003 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 285D89DA1AF1C97100FDE003;
+					};
+					285D8A031AF1CA1B00FDE003 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					285D8A0D1AF1CA1F00FDE003 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -183,6 +337,8 @@
 			targets = (
 				285D89DA1AF1C97100FDE003 /* doubanFM */,
 				285D89EF1AF1C97100FDE003 /* doubanFMTests */,
+				285D8A031AF1CA1B00FDE003 /* doubanFM WatchKit Extension */,
+				285D8A0D1AF1CA1F00FDE003 /* doubanFM WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +358,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		285D8A021AF1CA1B00FDE003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285D8A0F1AF1CA1F00FDE003 /* doubanFM WatchKit App.app in Resources */,
+				285D8A0B1AF1CA1F00FDE003 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		285D8A0C1AF1CA1F00FDE003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285D8A171AF1CA1F00FDE003 /* Interface.storyboard in Resources */,
+				285D8A191AF1CA1F00FDE003 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +399,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		285D8A001AF1CA1B00FDE003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282C85151AF734DF007F108D /* SongController.swift in Sources */,
+				285D8A271AF1E9DB00FDE003 /* SwiftyJSON.swift in Sources */,
+				282C85091AF717D4007F108D /* Data.swift in Sources */,
+				282C850B1AF71CAF007F108D /* ChannelRow.swift in Sources */,
+				285D8A251AF1E9B200FDE003 /* Alamofire.swift in Sources */,
+				285D8A091AF1CA1E00FDE003 /* InterfaceController.swift in Sources */,
+				282C850D1AF71F29007F108D /* ChannelConrtoller.swift in Sources */,
+				2848DEFA1AF1F31C004842D6 /* HttpController.swift in Sources */,
+				282C85111AF73311007F108D /* SongRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +422,16 @@
 			isa = PBXTargetDependency;
 			target = 285D89DA1AF1C97100FDE003 /* doubanFM */;
 			targetProxy = 285D89F11AF1C97100FDE003 /* PBXContainerItemProxy */;
+		};
+		285D8A111AF1CA1F00FDE003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 285D8A0D1AF1CA1F00FDE003 /* doubanFM WatchKit App */;
+			targetProxy = 285D8A101AF1CA1F00FDE003 /* PBXContainerItemProxy */;
+		};
+		285D8A1B1AF1CA1F00FDE003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 285D8A031AF1CA1B00FDE003 /* doubanFM WatchKit Extension */;
+			targetProxy = 285D8A1A1AF1CA1F00FDE003 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +450,14 @@
 				285D89EA1AF1C97100FDE003 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		285D8A151AF1CA1F00FDE003 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				285D8A161AF1CA1F00FDE003 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -392,6 +600,62 @@
 			};
 			name = Release;
 		};
+		285D8A1E1AF1CA2000FDE003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = doubanFM_WatchKit_Extension;
+				INFOPLIST_FILE = "doubanFM WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		285D8A1F1AF1CA2000FDE003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = doubanFM_WatchKit_Extension;
+				INFOPLIST_FILE = "doubanFM WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		285D8A211AF1CA2000FDE003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "doubanFM WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		285D8A221AF1CA2000FDE003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "doubanFM WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,6 +675,7 @@
 				285D89FC1AF1C97100FDE003 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		285D89FD1AF1C97100FDE003 /* Build configuration list for PBXNativeTarget "doubanFMTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +684,25 @@
 				285D89FF1AF1C97100FDE003 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		285D8A1D1AF1CA2000FDE003 /* Build configuration list for PBXNativeTarget "doubanFM WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				285D8A1E1AF1CA2000FDE003 /* Debug */,
+				285D8A1F1AF1CA2000FDE003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		285D8A201AF1CA2000FDE003 /* Build configuration list for PBXNativeTarget "doubanFM WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				285D8A211AF1CA2000FDE003 /* Debug */,
+				285D8A221AF1CA2000FDE003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

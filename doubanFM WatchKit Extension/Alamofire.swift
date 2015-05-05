@@ -22,6 +22,8 @@
 
 import Foundation
 
+var Alamofire = Manager.sharedInstance
+
 /// Alamofire errors
 public let AlamofireErrorDomain = "com.alamofire.error"
 
