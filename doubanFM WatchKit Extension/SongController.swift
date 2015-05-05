@@ -15,7 +15,10 @@ class SongController: WKInterfaceController {
     var data:Data = Data.shared
     
     override func awakeWithContext(context: AnyObject?) {
-       table.setNumberOfRows(data.songs.count, withRowType: "musicList")
+        super.awakeWithContext(context)
+        self.delegate = context as? SongProtocol
+        
+        table.setNumberOfRows(data.songs.count, withRowType: "musicList")
         
         for(index,json) in enumerate(data.songs){
             let row = table.rowControllerAtIndex(index) as! SongRow
